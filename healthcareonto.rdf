@@ -1,0 +1,574 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/hansa/ontologies/2024/11/untitled-ontology-15/"
+     xml:base="http://www.semanticweb.org/hansa/ontologies/2024/11/untitled-ontology-15/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:untitled-ontology-15="http://www.semanticweb.org/hansa/ontologies/2024/11/untitled-ontology-15#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/hansa/ontologies/2024/11/untitled-ontology-15"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/hansa/ontologies/2024/11/untitled-ontology-15#assignto -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hansa/ontologies/2024/11/untitled-ontology-15#assignto">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hansa/ontologies/2024/11/untitled-ontology-15#Treatment"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hansa/ontologies/2024/11/untitled-ontology-15#Doctor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hansa/ontologies/2024/11/untitled-ontology-15#hasNurse -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hansa/ontologies/2024/11/untitled-ontology-15#hasNurse">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hansa/ontologies/2024/11/untitled-ontology-15#Doctor"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hansa/ontologies/2024/11/untitled-ontology-15#Nurse"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hansa/ontologies/2024/11/untitled-ontology-15#hasTreatment -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hansa/ontologies/2024/11/untitled-ontology-15#hasTreatment">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hansa/ontologies/2024/11/untitled-ontology-15#Disease"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hansa/ontologies/2024/11/untitled-ontology-15#Treatment"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hansa/ontologies/2024/11/untitled-ontology-15#hasdisease -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hansa/ontologies/2024/11/untitled-ontology-15#hasdisease">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hansa/ontologies/2024/11/untitled-ontology-15#Patient"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hansa/ontologies/2024/11/untitled-ontology-15#Disease"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hansa/ontologies/2024/11/untitled-ontology-15#hasward -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hansa/ontologies/2024/11/untitled-ontology-15#hasward">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hansa/ontologies/2024/11/untitled-ontology-15#Disease"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hansa/ontologies/2024/11/untitled-ontology-15#Ward"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hansa/ontologies/2024/11/untitled-ontology-15#usesambulance -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hansa/ontologies/2024/11/untitled-ontology-15#usesambulance">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hansa/ontologies/2024/11/untitled-ontology-15#Doctor"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hansa/ontologies/2024/11/untitled-ontology-15#Patient"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hansa/ontologies/2024/11/untitled-ontology-15#Ambulance"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/hansa/ontologies/2024/11/untitled-ontology-15#Disname -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hansa/ontologies/2024/11/untitled-ontology-15#Disname"/>
+    
+
+
+    <!-- http://www.semanticweb.org/hansa/ontologies/2024/11/untitled-ontology-15#DocType -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hansa/ontologies/2024/11/untitled-ontology-15#DocType">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hansa/ontologies/2024/11/untitled-ontology-15#Doctor"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hansa/ontologies/2024/11/untitled-ontology-15#Docname -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hansa/ontologies/2024/11/untitled-ontology-15#Docname">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hansa/ontologies/2024/11/untitled-ontology-15#Doctor"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#Name"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hansa/ontologies/2024/11/untitled-ontology-15#NurseType -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hansa/ontologies/2024/11/untitled-ontology-15#NurseType">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hansa/ontologies/2024/11/untitled-ontology-15#Nurse"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hansa/ontologies/2024/11/untitled-ontology-15#disease1 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hansa/ontologies/2024/11/untitled-ontology-15#disease1">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hansa/ontologies/2024/11/untitled-ontology-15#Disease"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hansa/ontologies/2024/11/untitled-ontology-15#disease2 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hansa/ontologies/2024/11/untitled-ontology-15#disease2">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hansa/ontologies/2024/11/untitled-ontology-15#Disease"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hansa/ontologies/2024/11/untitled-ontology-15#disease3 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hansa/ontologies/2024/11/untitled-ontology-15#disease3">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hansa/ontologies/2024/11/untitled-ontology-15#Disease"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hansa/ontologies/2024/11/untitled-ontology-15#disease4 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hansa/ontologies/2024/11/untitled-ontology-15#disease4">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hansa/ontologies/2024/11/untitled-ontology-15#Disease"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hansa/ontologies/2024/11/untitled-ontology-15#disname -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hansa/ontologies/2024/11/untitled-ontology-15#disname">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hansa/ontologies/2024/11/untitled-ontology-15#Disease"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hansa/ontologies/2024/11/untitled-ontology-15#treatment1 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hansa/ontologies/2024/11/untitled-ontology-15#treatment1">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hansa/ontologies/2024/11/untitled-ontology-15#Treatment"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hansa/ontologies/2024/11/untitled-ontology-15#treatment5 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hansa/ontologies/2024/11/untitled-ontology-15#treatment5">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hansa/ontologies/2024/11/untitled-ontology-15#Treatment"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hansa/ontologies/2024/11/untitled-ontology-15#wardtype -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hansa/ontologies/2024/11/untitled-ontology-15#wardtype">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hansa/ontologies/2024/11/untitled-ontology-15#Ward"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/hansa/ontologies/2024/11/untitled-ontology-15#Ambulance -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hansa/ontologies/2024/11/untitled-ontology-15#Ambulance"/>
+    
+
+
+    <!-- http://www.semanticweb.org/hansa/ontologies/2024/11/untitled-ontology-15#Disease -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hansa/ontologies/2024/11/untitled-ontology-15#Disease"/>
+    
+
+
+    <!-- http://www.semanticweb.org/hansa/ontologies/2024/11/untitled-ontology-15#Doctor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hansa/ontologies/2024/11/untitled-ontology-15#Doctor"/>
+    
+
+
+    <!-- http://www.semanticweb.org/hansa/ontologies/2024/11/untitled-ontology-15#Nurse -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hansa/ontologies/2024/11/untitled-ontology-15#Nurse"/>
+    
+
+
+    <!-- http://www.semanticweb.org/hansa/ontologies/2024/11/untitled-ontology-15#Patient -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hansa/ontologies/2024/11/untitled-ontology-15#Patient"/>
+    
+
+
+    <!-- http://www.semanticweb.org/hansa/ontologies/2024/11/untitled-ontology-15#Treatment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hansa/ontologies/2024/11/untitled-ontology-15#Treatment"/>
+    
+
+
+    <!-- http://www.semanticweb.org/hansa/ontologies/2024/11/untitled-ontology-15#Ward -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hansa/ontologies/2024/11/untitled-ontology-15#Ward"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/hansa/ontologies/2024/11/untitled-ontology-15#Burn_Specialist -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hansa/ontologies/2024/11/untitled-ontology-15#Burn_Specialist">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hansa/ontologies/2024/11/untitled-ontology-15#Doctor"/>
+        <untitled-ontology-15:hasNurse rdf:resource="http://www.semanticweb.org/hansa/ontologies/2024/11/untitled-ontology-15#Nurse4"/>
+        <untitled-ontology-15:DocType>Burn_Spec</untitled-ontology-15:DocType>
+        <untitled-ontology-15:DocType>Dr.Kariyawasam</untitled-ontology-15:DocType>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hansa/ontologies/2024/11/untitled-ontology-15#BurnsTreatment -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hansa/ontologies/2024/11/untitled-ontology-15#BurnsTreatment">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hansa/ontologies/2024/11/untitled-ontology-15#Treatment"/>
+        <untitled-ontology-15:assignto rdf:resource="http://www.semanticweb.org/hansa/ontologies/2024/11/untitled-ontology-15#Burn_Specialist"/>
+        <untitled-ontology-15:treatment5>BurnReliefEquipment</untitled-ontology-15:treatment5>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hansa/ontologies/2024/11/untitled-ontology-15#CPR -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hansa/ontologies/2024/11/untitled-ontology-15#CPR">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hansa/ontologies/2024/11/untitled-ontology-15#Treatment"/>
+        <untitled-ontology-15:assignto rdf:resource="http://www.semanticweb.org/hansa/ontologies/2024/11/untitled-ontology-15#Cardiologist"/>
+        <untitled-ontology-15:treatment5>Defibrillator</untitled-ontology-15:treatment5>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hansa/ontologies/2024/11/untitled-ontology-15#Cardiologist -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hansa/ontologies/2024/11/untitled-ontology-15#Cardiologist">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hansa/ontologies/2024/11/untitled-ontology-15#Doctor"/>
+        <untitled-ontology-15:hasNurse rdf:resource="http://www.semanticweb.org/hansa/ontologies/2024/11/untitled-ontology-15#Nurse6"/>
+        <untitled-ontology-15:DocType>Dr.M K T Sudarshani</untitled-ontology-15:DocType>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hansa/ontologies/2024/11/untitled-ontology-15#Disease1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hansa/ontologies/2024/11/untitled-ontology-15#Disease1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hansa/ontologies/2024/11/untitled-ontology-15#Disease"/>
+        <untitled-ontology-15:hasTreatment rdf:resource="http://www.semanticweb.org/hansa/ontologies/2024/11/untitled-ontology-15#CPR"/>
+        <untitled-ontology-15:hasward rdf:resource="http://www.semanticweb.org/hansa/ontologies/2024/11/untitled-ontology-15#ward10"/>
+        <untitled-ontology-15:treatment5>HeartAttack</untitled-ontology-15:treatment5>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hansa/ontologies/2024/11/untitled-ontology-15#Disease2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hansa/ontologies/2024/11/untitled-ontology-15#Disease2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hansa/ontologies/2024/11/untitled-ontology-15#Disease"/>
+        <untitled-ontology-15:hasTreatment rdf:resource="http://www.semanticweb.org/hansa/ontologies/2024/11/untitled-ontology-15#FractureTreatment"/>
+        <untitled-ontology-15:hasward rdf:resource="http://www.semanticweb.org/hansa/ontologies/2024/11/untitled-ontology-15#ward2"/>
+        <untitled-ontology-15:disease1>Fracture</untitled-ontology-15:disease1>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hansa/ontologies/2024/11/untitled-ontology-15#Disease3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hansa/ontologies/2024/11/untitled-ontology-15#Disease3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hansa/ontologies/2024/11/untitled-ontology-15#Disease"/>
+        <untitled-ontology-15:hasTreatment rdf:resource="http://www.semanticweb.org/hansa/ontologies/2024/11/untitled-ontology-15#StrokeTreatment"/>
+        <untitled-ontology-15:hasward rdf:resource="http://www.semanticweb.org/hansa/ontologies/2024/11/untitled-ontology-15#ward8"/>
+        <untitled-ontology-15:disease1>Stroke</untitled-ontology-15:disease1>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hansa/ontologies/2024/11/untitled-ontology-15#Disease4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hansa/ontologies/2024/11/untitled-ontology-15#Disease4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hansa/ontologies/2024/11/untitled-ontology-15#Disease"/>
+        <untitled-ontology-15:hasTreatment rdf:resource="http://www.semanticweb.org/hansa/ontologies/2024/11/untitled-ontology-15#PneumoniaTreatment"/>
+        <untitled-ontology-15:hasward rdf:resource="http://www.semanticweb.org/hansa/ontologies/2024/11/untitled-ontology-15#ward12"/>
+        <untitled-ontology-15:disease1>Pneumonia</untitled-ontology-15:disease1>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hansa/ontologies/2024/11/untitled-ontology-15#Disease5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hansa/ontologies/2024/11/untitled-ontology-15#Disease5">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hansa/ontologies/2024/11/untitled-ontology-15#Disease"/>
+        <untitled-ontology-15:hasTreatment rdf:resource="http://www.semanticweb.org/hansa/ontologies/2024/11/untitled-ontology-15#BurnsTreatment"/>
+        <untitled-ontology-15:hasward rdf:resource="http://www.semanticweb.org/hansa/ontologies/2024/11/untitled-ontology-15#ward5"/>
+        <untitled-ontology-15:disease1>Burns</untitled-ontology-15:disease1>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hansa/ontologies/2024/11/untitled-ontology-15#Disease6 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hansa/ontologies/2024/11/untitled-ontology-15#Disease6">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hansa/ontologies/2024/11/untitled-ontology-15#Disease"/>
+        <untitled-ontology-15:hasTreatment rdf:resource="http://www.semanticweb.org/hansa/ontologies/2024/11/untitled-ontology-15#SepsisTreatment"/>
+        <untitled-ontology-15:hasward rdf:resource="http://www.semanticweb.org/hansa/ontologies/2024/11/untitled-ontology-15#ward1"/>
+        <untitled-ontology-15:disease1>Sepsis</untitled-ontology-15:disease1>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hansa/ontologies/2024/11/untitled-ontology-15#FractureTreatment -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hansa/ontologies/2024/11/untitled-ontology-15#FractureTreatment">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hansa/ontologies/2024/11/untitled-ontology-15#Treatment"/>
+        <untitled-ontology-15:assignto rdf:resource="http://www.semanticweb.org/hansa/ontologies/2024/11/untitled-ontology-15#Orthopedic_Surgeon"/>
+        <untitled-ontology-15:treatment5>Plaster</untitled-ontology-15:treatment5>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hansa/ontologies/2024/11/untitled-ontology-15#Intensivist -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hansa/ontologies/2024/11/untitled-ontology-15#Intensivist">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hansa/ontologies/2024/11/untitled-ontology-15#Doctor"/>
+        <untitled-ontology-15:hasTreatment rdf:resource="http://www.semanticweb.org/hansa/ontologies/2024/11/untitled-ontology-15#Nurse5"/>
+        <untitled-ontology-15:DocType>Dr.B T N Perera</untitled-ontology-15:DocType>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hansa/ontologies/2024/11/untitled-ontology-15#Neurologist -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hansa/ontologies/2024/11/untitled-ontology-15#Neurologist">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hansa/ontologies/2024/11/untitled-ontology-15#Doctor"/>
+        <untitled-ontology-15:hasNurse rdf:resource="http://www.semanticweb.org/hansa/ontologies/2024/11/untitled-ontology-15#Nurse2"/>
+        <untitled-ontology-15:DocType>Dr.I P P Dhyan</untitled-ontology-15:DocType>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hansa/ontologies/2024/11/untitled-ontology-15#Nurse1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hansa/ontologies/2024/11/untitled-ontology-15#Nurse1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hansa/ontologies/2024/11/untitled-ontology-15#Nurse"/>
+        <untitled-ontology-15:NurseType>Orthopedic_Nurse</untitled-ontology-15:NurseType>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hansa/ontologies/2024/11/untitled-ontology-15#Nurse2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hansa/ontologies/2024/11/untitled-ontology-15#Nurse2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hansa/ontologies/2024/11/untitled-ontology-15#Nurse"/>
+        <untitled-ontology-15:NurseType>Neulogist_Nurse</untitled-ontology-15:NurseType>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hansa/ontologies/2024/11/untitled-ontology-15#Nurse3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hansa/ontologies/2024/11/untitled-ontology-15#Nurse3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hansa/ontologies/2024/11/untitled-ontology-15#Nurse"/>
+        <untitled-ontology-15:NurseType>Pulmonologist_Nurse</untitled-ontology-15:NurseType>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hansa/ontologies/2024/11/untitled-ontology-15#Nurse4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hansa/ontologies/2024/11/untitled-ontology-15#Nurse4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hansa/ontologies/2024/11/untitled-ontology-15#Nurse"/>
+        <untitled-ontology-15:NurseType>Burn_Speacial_Nurse</untitled-ontology-15:NurseType>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hansa/ontologies/2024/11/untitled-ontology-15#Nurse5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hansa/ontologies/2024/11/untitled-ontology-15#Nurse5">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hansa/ontologies/2024/11/untitled-ontology-15#Nurse"/>
+        <untitled-ontology-15:NurseType>Intensivist_Nurse</untitled-ontology-15:NurseType>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hansa/ontologies/2024/11/untitled-ontology-15#Nurse6 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hansa/ontologies/2024/11/untitled-ontology-15#Nurse6">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hansa/ontologies/2024/11/untitled-ontology-15#Nurse"/>
+        <untitled-ontology-15:NurseType>Cardiologist_Nurse</untitled-ontology-15:NurseType>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hansa/ontologies/2024/11/untitled-ontology-15#Orthopedic_Surgeon -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hansa/ontologies/2024/11/untitled-ontology-15#Orthopedic_Surgeon">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hansa/ontologies/2024/11/untitled-ontology-15#Doctor"/>
+        <untitled-ontology-15:hasNurse rdf:resource="http://www.semanticweb.org/hansa/ontologies/2024/11/untitled-ontology-15#Nurse1"/>
+        <untitled-ontology-15:DocType>Orthopedic</untitled-ontology-15:DocType>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hansa/ontologies/2024/11/untitled-ontology-15#PneumoniaTreatment -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hansa/ontologies/2024/11/untitled-ontology-15#PneumoniaTreatment">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hansa/ontologies/2024/11/untitled-ontology-15#Treatment"/>
+        <untitled-ontology-15:assignto rdf:resource="http://www.semanticweb.org/hansa/ontologies/2024/11/untitled-ontology-15#Pulmonologist"/>
+        <untitled-ontology-15:treatment5>PneumoniaTreatment</untitled-ontology-15:treatment5>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hansa/ontologies/2024/11/untitled-ontology-15#Pulmonologist -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hansa/ontologies/2024/11/untitled-ontology-15#Pulmonologist">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hansa/ontologies/2024/11/untitled-ontology-15#Doctor"/>
+        <untitled-ontology-15:hasNurse rdf:resource="http://www.semanticweb.org/hansa/ontologies/2024/11/untitled-ontology-15#Nurse3"/>
+        <untitled-ontology-15:DocType>Pulmono</untitled-ontology-15:DocType>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hansa/ontologies/2024/11/untitled-ontology-15#SepsisTreatment -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hansa/ontologies/2024/11/untitled-ontology-15#SepsisTreatment">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hansa/ontologies/2024/11/untitled-ontology-15#Treatment"/>
+        <untitled-ontology-15:assignto rdf:resource="http://www.semanticweb.org/hansa/ontologies/2024/11/untitled-ontology-15#Intensivist"/>
+        <untitled-ontology-15:treatment5>Catheters</untitled-ontology-15:treatment5>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hansa/ontologies/2024/11/untitled-ontology-15#StrokeTreatment -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hansa/ontologies/2024/11/untitled-ontology-15#StrokeTreatment">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hansa/ontologies/2024/11/untitled-ontology-15#Treatment"/>
+        <untitled-ontology-15:assignto rdf:resource="http://www.semanticweb.org/hansa/ontologies/2024/11/untitled-ontology-15#Neurologist"/>
+        <untitled-ontology-15:treatment5>CTScan</untitled-ontology-15:treatment5>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hansa/ontologies/2024/11/untitled-ontology-15#Treatment1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hansa/ontologies/2024/11/untitled-ontology-15#Treatment1"/>
+    
+
+
+    <!-- http://www.semanticweb.org/hansa/ontologies/2024/11/untitled-ontology-15#ambulance1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hansa/ontologies/2024/11/untitled-ontology-15#ambulance1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hansa/ontologies/2024/11/untitled-ontology-15#Ambulance"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hansa/ontologies/2024/11/untitled-ontology-15#ambulance2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hansa/ontologies/2024/11/untitled-ontology-15#ambulance2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hansa/ontologies/2024/11/untitled-ontology-15#Ambulance"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hansa/ontologies/2024/11/untitled-ontology-15#ward1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hansa/ontologies/2024/11/untitled-ontology-15#ward1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hansa/ontologies/2024/11/untitled-ontology-15#Ward"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hansa/ontologies/2024/11/untitled-ontology-15#ward10 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hansa/ontologies/2024/11/untitled-ontology-15#ward10">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hansa/ontologies/2024/11/untitled-ontology-15#Ward"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hansa/ontologies/2024/11/untitled-ontology-15#ward12 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hansa/ontologies/2024/11/untitled-ontology-15#ward12">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hansa/ontologies/2024/11/untitled-ontology-15#Ward"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hansa/ontologies/2024/11/untitled-ontology-15#ward2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hansa/ontologies/2024/11/untitled-ontology-15#ward2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hansa/ontologies/2024/11/untitled-ontology-15#Ward"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hansa/ontologies/2024/11/untitled-ontology-15#ward5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hansa/ontologies/2024/11/untitled-ontology-15#ward5">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hansa/ontologies/2024/11/untitled-ontology-15#Ward"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hansa/ontologies/2024/11/untitled-ontology-15#ward8 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hansa/ontologies/2024/11/untitled-ontology-15#ward8">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hansa/ontologies/2024/11/untitled-ontology-15#Ward"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hansa/ontologies/2024/11/untitled-ontology-15#1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hansa/ontologies/2024/11/untitled-ontology-15#1"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
